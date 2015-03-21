@@ -28,3 +28,15 @@ $(function() {
 $('.navbar-collapse ul li a').click(function() {
     $('.navbar-toggle:visible').click();
 });
+
+$("button.mute").click(function() {
+    var dom = $("#video").get(0);
+    dom.muted = !dom.muted;
+
+    var icon = $(".video-controls .mute i");
+    if(dom.muted) {
+        icon.addClass("fa-volume-off").removeClass("fa-volume-up");
+    } else {
+        icon.removeClass("fa-volume-off").addClass("fa-volume-up");
+    }
+});
