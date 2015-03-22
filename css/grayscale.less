@@ -8,7 +8,7 @@ body {
   width: 100%;
   height: 100%;
   font-family: Lora, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #fff;
+  color: #999999;
   background-color: #000;
 }
 
@@ -34,6 +34,8 @@ p {
   margin: 0 0 25px;
   font-size: 18px;
   line-height: 1.5;
+  font-family: sans-serif;
+  font-weight: 100;
 }
 
 @media (min-width: 768px) {
@@ -55,6 +57,13 @@ a:hover,
 a:focus {
   text-decoration: none;
   color: #1d9b6c;
+}
+
+pre {
+  background: none;
+  color: #999999;
+  border: 1px solid #999999;
+  padding: 30px 0;
 }
 
 .light {
@@ -80,7 +89,7 @@ a:focus {
 .navbar-custom .navbar-brand .navbar-toggle {
   padding: 4px 6px;
   font-size: 16px;
-  color: #fff;
+  color: #999999;
 }
 
 .navbar-custom .navbar-brand .navbar-toggle:focus,
@@ -89,7 +98,7 @@ a:focus {
 }
 
 .navbar-custom a {
-  color: #fff;
+  color: #999999;
 }
 
 .navbar-custom .nav li a {
@@ -119,7 +128,7 @@ a:focus {
 }
 
 .navbar-custom .nav li.active a:hover {
-  color: #fff;
+  color: #999999;
 }
 
 @media (min-width: 768px) {
@@ -146,7 +155,7 @@ a:focus {
   height: auto;
   padding: 100px 0;
   text-align: center;
-  color: #fff;
+  color: white;
   overflow: hidden;
   position: relative;
 
@@ -241,10 +250,10 @@ a:focus {
   height: 70px;
   margin-top: 15px;
   padding: 7px 16px;
-  border: 2px solid #fff;
+  border: 2px solid white;
   border-radius: 100% !important;
   font-size: 40px;
-  color: #fff;
+  color: white;
   background: 0 0;
   -webkit-transition: background .3s ease-in-out;
   -moz-transition: background .3s ease-in-out;
@@ -254,7 +263,7 @@ a:focus {
 .btn-circle:hover,
 .btn-circle:focus {
   outline: 0;
-  color: #fff;
+  color: white;
   background: rgba(255, 255, 255, .1);
 }
 
@@ -411,14 +420,14 @@ body {
   right: -14px;
   display: inline-block;
   border-top: 14px solid transparent;
-  border-left: 14px solid #fff;
-  border-right: 0 solid #fff;
+  border-left: 14px solid #999999;
+  border-right: 0 solid #999999;
   border-bottom: 14px solid transparent;
   content: " ";
 }
 
 .timeline > li > .timeline-badge {
-  color: #fff;
+  color: #999999;
   width: 50px;
   height: 50px;
   line-height: 50px;
@@ -524,6 +533,20 @@ body {
   }
 }
 
+.timeline-heading {
+
+  margin-bottom: 60px;
+
+  img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 75px;
+    height: 75px;
+    display: inline;
+  }
+}
+
 /* Pagination */
 
 .pages {
@@ -542,11 +565,29 @@ body {
     margin: auto;
     text-align: center;
     line-height: 100px;
-    color: white;
+    color: #999999;
 
     &:hover {
       background: white;
       color: black;
+    }
+  }
+}
+
+ul.characters {
+  font-size: 1.2em;
+
+  list-style: none;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: bolder;
+
+  margin-bottom: 50px;
+  margin-top: -25px;
+  li {
+    margin: 5px 0;
+
+    small {
+      font-weight: lighter;
     }
   }
 }

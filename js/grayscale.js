@@ -40,3 +40,15 @@ $("button.mute").click(function() {
         icon.removeClass("fa-volume-off").addClass("fa-volume-up");
     }
 });
+
+if(characters) {
+    var titles = $("h4.timeline-title");
+    titles.each(function() {
+        var title = $(this);
+        var image = characters[title.text()];
+        if (image) {
+            var imageElement = $("<img src='" + image + "' alt='" + title.text() + "' />");
+            title.before(imageElement);
+        }
+    });
+}
