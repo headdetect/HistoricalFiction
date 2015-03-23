@@ -78,7 +78,7 @@ $("h4.timeline-title").each(function() {
     var title = $(this);
     var image = characters[title.text()];
     if (image) {
-        var imageElement = $("<img src='/img/chars/" + image + ".jpg' alt='" + title.text() + "' />");
+        var imageElement = $("<img src='img/chars/" + image + ".jpg' alt='" + title.text() + "' />");
         title.before(imageElement);
     }
 });
