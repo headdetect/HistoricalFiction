@@ -59,7 +59,7 @@
                 <li class="dropdown">
                     <a href="#" class="page-scroll dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Earth <span class="caret"></span></a>
                     <ul class="dropdown-menu" role="menu">
-                        <li><a href="/stories/earth/3.html">Well...shit</a></li>
+                        <li><a href="/stories/earth/3.html">Eleven?</a></li>
                         <li><a href="/stories/earth/4.html">War Room</a></li>
                     </ul>
                 </li>
@@ -78,8 +78,12 @@
 
 <!-- Intro Header -->
 <header class="intro">
-    <img src="http://www.nasa.gov/images/content/220176main_launch-l.jpg" />
+    <!--- Source video https://www.youtube.com/watch?v=b6TYTG81NtY --->
     <div class="intro-body">
+        <div class="video-controls">
+            <button class="mute"><i class="fa fa-volume-up"></i></button>
+            <a class="link" href="http://files.mrlopez.me/raw/return.mp4"><i class="fa fa-chain"></i></a>
+        </div>
         <div class="container">
             <div class="row">
                 <div class="col-md-8 col-md-offset-2">
@@ -91,6 +95,12 @@
             </div>
         </div>
     </div>
+    <div class="overlay"></div>
+    <video autoplay loop id="video">
+        <!-- source video here: https://www.youtube.com/watch?v=lRwKUScppvQ -->
+        <source type="video/mp4" src="http://files.mrlopez.me/raw/return.mp4" />
+        You need to upgrade your browser
+    </video>
 </header>
 
 <!-- About Section -->
@@ -465,7 +475,7 @@
 <section class="pages">
     <div class="page"><a class="previous" href="/stories/space/6.html"><i class="fa fa-arrow-circle-up"></i> Back to Space</a></div>
     <div class="page"><a class="previous" href="/stories/earth/4.html"><i class="fa fa-arrow-circle-down"></i> Back to Earth</a></div>
-    <div class="page"><a class="next" href="/stories/earthspace/8.html">Next Page<i class="fa fa-arrow-circle-right"></i></a></div>
+    <div class="page"><a class="next" href="/stories/earthspace/8.html">Next Page <i class="fa fa-arrow-circle-right"></i></a></div>
 </section>
 
 <!-- Footer -->
