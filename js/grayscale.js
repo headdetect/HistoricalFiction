@@ -96,3 +96,7 @@ $("ul.characters li").each(function() {
         char.append(externalLink);
     }
 });
+
+$(".too-lazy-to-href a").each(function() {
+    $(this).attr("href", $(this).text());
+})
