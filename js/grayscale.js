@@ -41,14 +41,25 @@ $("button.mute").click(function() {
     }
 });
 
-if(characters) {
-    var titles = $("h4.timeline-title");
-    titles.each(function() {
-        var title = $(this);
-        var image = characters[title.text()];
-        if (image) {
-            var imageElement = $("<img src='" + image + "' alt='" + title.text() + "' />");
-            title.before(imageElement);
-        }
-    });
-}
+var characters = {
+    "CMD": "armstrong",
+    "PIL": "collins",
+    "LMP": "aldrin",
+    "HGC": "capcom",
+    "A11": "a11",
+    "CAPCOM": "capcom",
+    "MARINE": "marine",
+    "POTUS": "potus",
+    "DCTR": "director",
+    "ACAP": "acap"
+};
+
+var titles = $("h4.timeline-title");
+titles.each(function() {
+    var title = $(this);
+    var image = characters[title.text()];
+    if (image) {
+        var imageElement = $("<img src='/img/chars/" + image + ".jpg' alt='" + title.text() + "' />");
+        title.before(imageElement);
+    }
+});
