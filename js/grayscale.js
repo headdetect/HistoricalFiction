@@ -8,8 +8,10 @@
 $(window).scroll(function() {
     if ($(".navbar").offset().top > 50) {
         $(".navbar-fixed-top").addClass("top-nav-collapse");
+        toggleMute(true);
     } else {
         $(".navbar-fixed-top").removeClass("top-nav-collapse");
+        toggleMute(false);
     }
 });
 
@@ -30,8 +32,12 @@ $('.navbar-collapse ul li a').click(function() {
 });
 
 $("button.mute").click(function() {
+    toggleMute();
+});
+
+var toggleMute = function(muted) {
     var dom = $("#video").get(0);
-    dom.muted = !dom.muted;
+    dom.muted = (typeof muted == "undefined") ? !dom.muted : !!muted;
 
     var icon = $(".video-controls .mute i");
     if(dom.muted) {
@@ -39,7 +45,7 @@ $("button.mute").click(function() {
     } else {
         icon.removeClass("fa-volume-off").addClass("fa-volume-up");
     }
-});
+};
 
 var characters = {
     "CMD": "armstrong",
