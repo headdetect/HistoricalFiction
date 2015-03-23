@@ -11,10 +11,10 @@
 
     <title>It's Not Ours - Historical Fiction</title>
 
-    <link href="/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/css/grayscale.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/grayscale.css" rel="stylesheet">
 
-    <link href="/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet"
           type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
@@ -44,31 +44,31 @@
         <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
             <ul class="nav navbar-nav">
                 <li class="hidden"><a href="#page-top"></a></li>
-                <li><a href="/">Introduction</a></li>
+                <li><a href="index.html">Introduction</a></li>
                 <li class="dropdown">
                     <a href="#" class="page-scroll dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Earth & Space <span class="caret"></span></a>
                     <ul class="dropdown-menu" role="menu">
-                        <li><a href="/stories/earthspace/1.html">To the Moon</a></li>
-                        <li><a href="/stories/earthspace/2.html">Discovery</a></li>
-                        <li><a href="/stories/earthspace/7.html">The Rescue</a></li>
-                        <li><a href="/stories/earthspace/8.html">For the People</a></li>
+                        <li><a href="1.html">To the Moon</a></li>
+                        <li><a href="2.html">Discovery</a></li>
+                        <li><a href="7.html">The Rescue</a></li>
+                        <li><a href="8.html">For the People</a></li>
                     </ul>
                 </li>
                 <li class="dropdown">
                     <a href="#" class="page-scroll dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Earth <span class="caret"></span></a>
                     <ul class="dropdown-menu" role="menu">
-                        <li><a href="/stories/earth/3.html">Eleven?</a></li>
-                        <li><a href="/stories/earth/4.html">War Room</a></li>
+                        <li><a href="3.html">Eleven?</a></li>
+                        <li><a href="4.html">War Room</a></li>
                     </ul>
                 </li>
                 <li class="dropdown">
                     <a href="#" class="page-scroll dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Space <span class="caret"></span></a>
                     <ul class="dropdown-menu" role="menu">
-                        <li><a href="/stories/space/5.html">SOS</a></li>
-                        <li><a href="/stories/space/6.html">History Lesson</a></li>
+                        <li><a href="5.html">SOS</a></li>
+                        <li><a href="6.html">History Lesson</a></li>
                     </ul>
                 </li>
-                <li><a href="/stories/earthspace/credits.html">Credits</a></li>
+                <li><a href="credits.html">Credits</a></li>
             </ul>
         </div>
     </div>
@@ -76,13 +76,16 @@
 
 <!-- Intro Header -->
 <header class="intro">
-    <!-- This is actually the wind room control center :P --->
-    <img src="/img/wind-room.jpg" />
+    <!--- Source video https://www.youtube.com/watch?v=b6TYTG81NtY --->
     <div class="intro-body">
+        <div class="video-controls">
+            <button class="mute"><i class="fa fa-volume-up"></i></button>
+            <a class="link" href="http://files.mrlopez.me/raw/return.mp4"><i class="fa fa-chain"></i></a>
+        </div>
         <div class="container">
             <div class="row">
                 <div class="col-md-8 col-md-offset-2">
-                    <h1 class="brand-heading">Eleven?</h1>
+                    <h1 class="brand-heading">Rescue</h1>
                     <a href="#content" class="btn btn-circle page-scroll">
                         <i class="fa fa-angle-double-down animated"></i>
                     </a>
@@ -90,37 +93,33 @@
             </div>
         </div>
     </div>
+    <div class="overlay"></div>
+    <video autoplay loop id="video">
+        <!-- source video here: https://www.youtube.com/watch?v=lRwKUScppvQ -->
+        <source type="video/mp4" src="http://files.mrlopez.me/raw/return.mp4" />
+        You need to upgrade your browser
+    </video>
 </header>
 
 <!-- About Section -->
 <section class="container content-section" id="content">
     <div class="container">
         <ul class="characters">
-            <li>A11 <small>Apollo 11 Space Crew</small></li>
-            <li>CAPCOM <small>​McCandless (Capsule Communicator)</small></li>
-            <li>ACAP <small>Assistant CAPCOM</small></li>
+            <li>CMD <small>Neil Armstrong (Commander)</small></li>
+            <li>PIL <small>Michael Collins (Command Module Pilot)</small></li>
+            <li>LMP <small>Edwin "Buzz" E. Aldrin, Jr. (Lunar Module Pilot)</small></li>
+            <li>HGC <small>​McCandless aka CAPCOM (Houston Ground Control)</small></li>
+            <li>DCTR <small>Eugene Francis "Gene" Kranz (Director of NASA)</small></li>
         </ul>
         <ul class="timeline">
-            <li>
-                <div class="timeline-panel">
-                    <div class="timeline-heading">
-                        <h4 class="timeline-title">CAPCOM</h4>
-                    </div>
-                    <div class="timeline-body">
-                        <p>
-                            Hello?
-                        </p>
-                    </div>
-                </div>
-            </li>
             <li class="timeline-inverted">
                 <div class="timeline-panel">
                     <div class="timeline-heading">
-                        <h4 class="timeline-title">A11</h4>
+                        <h4 class="timeline-title">HGC</h4>
                     </div>
                     <div class="timeline-body">
                         <p>
-                            ...
+                            <em>*bzzzz*</em> Eleven, do you read us over? <em>*bzzzz*</em>
                         </p>
                     </div>
                 </div>
@@ -128,11 +127,11 @@
             <li>
                 <div class="timeline-panel">
                     <div class="timeline-heading">
-                        <h4 class="timeline-title">CAPCOM</h4>
+                        <h4 class="timeline-title">PIL</h4>
                     </div>
                     <div class="timeline-body">
                         <p>
-                            They seem to have..what?
+                            You hear that?
                         </p>
                     </div>
                 </div>
@@ -140,11 +139,11 @@
             <li class="timeline-inverted">
                 <div class="timeline-panel">
                     <div class="timeline-heading">
-                        <h4 class="timeline-title">A11</h4>
+                        <h4 class="timeline-title">HGC</h4>
                     </div>
                     <div class="timeline-body">
                         <p>
-                            ...
+                            <em>*bzzzz*</em> Eleven, do you read us over? <em>*bzzzz*</em>
                         </p>
                     </div>
                 </div>
@@ -152,11 +151,11 @@
             <li>
                 <div class="timeline-panel">
                     <div class="timeline-heading">
-                        <h4 class="timeline-title">CAPCOM</h4>
+                        <h4 class="timeline-title">CMD</h4>
                     </div>
                     <div class="timeline-body">
                         <p>
-                            You there Eleven?
+                            Houston? This is Armstrong. Do you copy?
                         </p>
                     </div>
                 </div>
@@ -164,11 +163,11 @@
             <li class="timeline-inverted">
                 <div class="timeline-panel">
                     <div class="timeline-heading">
-                        <h4 class="timeline-title">A11</h4>
+                        <h4 class="timeline-title">HGC</h4>
                     </div>
                     <div class="timeline-body">
                         <p>
-                            ...
+                            <em>*bzzzz*</em>
                         </p>
                     </div>
                 </div>
@@ -176,11 +175,11 @@
             <li>
                 <div class="timeline-panel">
                     <div class="timeline-heading">
-                        <h4 class="timeline-title">CAPCOM</h4>
+                        <h4 class="timeline-title">CMD</h4>
                     </div>
                     <div class="timeline-body">
                         <p>
-                            Are you reading us? How copy? Over.
+                            Houston. Do you copy?
                         </p>
                     </div>
                 </div>
@@ -188,11 +187,23 @@
             <li class="timeline-inverted">
                 <div class="timeline-panel">
                     <div class="timeline-heading">
-                        <h4 class="timeline-title">A11</h4>
+                        <h4 class="timeline-title">HGC</h4>
                     </div>
                     <div class="timeline-body">
                         <p>
-                            ...
+                            <em>*bzzzz*</em> Copy
+                        </p>
+                    </div>
+                </div>
+            </li>
+            <li class="timeline-inverted">
+                <div class="timeline-panel">
+                    <div class="timeline-heading">
+                        <h4 class="timeline-title">HGC</h4>
+                    </div>
+                    <div class="timeline-body">
+                        <p>
+                            I think we’ve got the signal restored. Somewhat. We need your coords, we only have voice signals online.
                         </p>
                     </div>
                 </div>
@@ -200,11 +211,11 @@
             <li>
                 <div class="timeline-panel">
                     <div class="timeline-heading">
-                        <h4 class="timeline-title">CAPCOM</h4>
+                        <h4 class="timeline-title">LMP</h4>
                     </div>
                     <div class="timeline-body">
                         <p>
-                            Apollo 11. How Copy? Over.
+                            1.4 N and about 24 E. Couple of degrees off where we landed. Over.
                         </p>
                     </div>
                 </div>
@@ -212,11 +223,25 @@
             <li class="timeline-inverted">
                 <div class="timeline-panel">
                     <div class="timeline-heading">
-                        <h4 class="timeline-title">A11</h4>
+                        <h4 class="timeline-title">HGC</h4>
                     </div>
                     <div class="timeline-body">
                         <p>
-                            ...
+                            Roger
+                        </p>
+                    </div>
+                </div>
+            </li>
+            <li class="timeline-inverted">
+                <div class="timeline-panel">
+                    <div class="timeline-heading">
+                        <h4 class="timeline-title">HGC</h4>
+                    </div>
+                    <div class="timeline-body">
+                        <p>
+                            We’ve sent the AP1-X Prototype your way. We installed an extra satellite module so
+                            hopefully we stay in communication this time.
+                            It's operating on channel 50.
                         </p>
                     </div>
                 </div>
@@ -224,11 +249,11 @@
             <li>
                 <div class="timeline-panel">
                     <div class="timeline-heading">
-                        <h4 class="timeline-title">CAPCOM</h4>
+                        <h4 class="timeline-title">CMD</h4>
                     </div>
                     <div class="timeline-body">
                         <p>
-                            God damnit Eleven. How. Copy. Over.
+                            Houston, You are going to want the AP1 crew to look at this when they land.
                         </p>
                     </div>
                 </div>
@@ -236,11 +261,23 @@
             <li class="timeline-inverted">
                 <div class="timeline-panel">
                     <div class="timeline-heading">
-                        <h4 class="timeline-title">A11</h4>
+                        <h4 class="timeline-title">HGC</h4>
                     </div>
                     <div class="timeline-body">
                         <p>
-                            ...
+                            Negative. Our mission is to get you home safely. We don’t have time for new discoveries.
+                        </p>
+                    </div>
+                </div>
+            </li>
+            <li class="timeline-inverted">
+                <div class="timeline-panel">
+                    <div class="timeline-heading">
+                        <h4 class="timeline-title">HGC</h4>
+                    </div>
+                    <div class="timeline-body">
+                        <p>
+                            We are going to need you to give us exact coords.
                         </p>
                     </div>
                 </div>
@@ -248,12 +285,11 @@
             <li>
                 <div class="timeline-panel">
                     <div class="timeline-heading">
-                        <h4 class="timeline-title">CAPCOM</h4>
+                        <h4 class="timeline-title">LMP</h4>
                     </div>
                     <div class="timeline-body">
                         <p>
-                            Eleven. Reply, we cannot call a ​COMLOSS.
-                            Can we get a response? Over.
+                            1.478 N 23.9892 E. Over.
                         </p>
                     </div>
                 </div>
@@ -261,11 +297,23 @@
             <li class="timeline-inverted">
                 <div class="timeline-panel">
                     <div class="timeline-heading">
-                        <h4 class="timeline-title">ACAP</h4>
+                        <h4 class="timeline-title">HGC</h4>
                     </div>
                     <div class="timeline-body">
                         <p>
-                            We’ve lost all signals to vital signs aboard sir.
+                            Roger.
+                        </p>
+                    </div>
+                </div>
+            </li>
+            <li class="timeline-inverted">
+                <div class="timeline-panel">
+                    <div class="timeline-heading">
+                        <h4 class="timeline-title">HGC</h4>
+                    </div>
+                    <div class="timeline-body">
+                        <p>
+                            Sit tight everyone. We are going to get you home.
                         </p>
                     </div>
                 </div>
@@ -273,11 +321,11 @@
             <li>
                 <div class="timeline-panel">
                     <div class="timeline-heading">
-                        <h4 class="timeline-title">CAPCOM</h4>
+                        <h4 class="timeline-title">CMD</h4>
                     </div>
                     <div class="timeline-body">
                         <p>
-                            Bullshit. Check it again.
+                            Houston, can we get communications with the crew onboard the AP1?
                         </p>
                     </div>
                 </div>
@@ -285,12 +333,12 @@
             <li class="timeline-inverted">
                 <div class="timeline-panel">
                     <div class="timeline-heading">
-                        <h4 class="timeline-title">ACAP</h4>
+                        <h4 class="timeline-title">HGC</h4>
                     </div>
                     <div class="timeline-body">
                         <p>
-                            Sir, i’ve checked it at least 4 times now.
-                            We have absolutely no connection to Eleven.
+                            Uhh... Negative. We were unable to proxy their communications through the main communication module
+                            in the short amount of time we had. We can relay your message on to them though.
                         </p>
                     </div>
                 </div>
@@ -298,11 +346,11 @@
             <li>
                 <div class="timeline-panel">
                     <div class="timeline-heading">
-                        <h4 class="timeline-title">CAPCOM</h4>
+                        <h4 class="timeline-title">CMD</h4>
                     </div>
                     <div class="timeline-body">
                         <p>
-                            Not even a simple ping?
+                            Ask them if they have any extra cargo space.
                         </p>
                     </div>
                 </div>
@@ -310,11 +358,24 @@
             <li class="timeline-inverted">
                 <div class="timeline-panel">
                     <div class="timeline-heading">
-                        <h4 class="timeline-title">ACAP</h4>
+                        <h4 class="timeline-title">HGC</h4>
                     </div>
                     <div class="timeline-body">
                         <p>
-                            No sir.
+                            Roger.
+                        </p>
+                    </div>
+                </div>
+            </li>
+            <li class="timeline-inverted">
+                <div class="timeline-panel">
+                    <div class="timeline-heading">
+                        <h4 class="timeline-title">HGC</h4>
+                    </div>
+                    <div class="timeline-body">
+                        <p>
+                            I'm getting a negative. The ship can only hold 5 members onboard. You’re already at 6.
+                            This is a spy spacecraft, not a scientific one.
                         </p>
                     </div>
                 </div>
@@ -322,11 +383,11 @@
             <li>
                 <div class="timeline-panel">
                     <div class="timeline-heading">
-                        <h4 class="timeline-title">CAPCOM</h4>
+                        <h4 class="timeline-title">CMD</h4>
                     </div>
                     <div class="timeline-body">
                         <p>
-                            *Sigh* Alert the director.
+                            There's no room? We need to bring back this <em>thing</em> for examination.
                         </p>
                     </div>
                 </div>
@@ -334,11 +395,73 @@
             <li class="timeline-inverted">
                 <div class="timeline-panel">
                     <div class="timeline-heading">
-                        <h4 class="timeline-title">ACAP</h4>
+                        <h4 class="timeline-title">HGC</h4>
                     </div>
                     <div class="timeline-body">
                         <p>
-                            Yes sir.
+                            Negative. Unless you can hold it in your hands.
+                        </p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="timeline-panel">
+                    <div class="timeline-heading">
+                        <h4 class="timeline-title">DCTR</h4>
+                    </div>
+                    <div class="timeline-body">
+                        <p>
+                            Crew members of Apollo 11, you are to board that ship and come back to earth. You are <b>not</b> to bring back any discoveries. Do you
+                            understand?
+                        </p>
+                    </div>
+                </div>
+            </li>
+            <li class="timeline-inverted">
+                <div class="timeline-panel">
+                    <div class="timeline-heading">
+                        <h4 class="timeline-title">CMD</h4>
+                    </div>
+                    <div class="timeline-body">
+                        <p>
+                            Roger.
+                        </p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="timeline-panel">
+                    <div class="timeline-heading">
+                        <h4 class="timeline-title">DCTR</h4>
+                    </div>
+                    <div class="timeline-body">
+                        <p>
+                            We have no idea what your "discoveries" are capable of.
+                            We are going the safe route and banning all collections of any non earthly artifacts.
+                        </p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="timeline-panel">
+                    <div class="timeline-heading">
+                        <h4 class="timeline-title">HGC</h4>
+                    </div>
+                    <div class="timeline-body">
+                        <p>
+                            The AP1 crew has reported that the ETA to your location is 2 hours.
+                        </p>
+                    </div>
+                </div>
+            </li>
+            <li class="timeline-inverted">
+                <div class="timeline-panel">
+                    <div class="timeline-heading">
+                        <h4 class="timeline-title">CMD</h4>
+                    </div>
+                    <div class="timeline-body">
+                        <p>
+                            Roger
                         </p>
                     </div>
                 </div>
@@ -348,9 +471,9 @@
 </section>
 
 <section class="pages">
-    <div class="page"><a class="previous" href="/stories/earthspace/2.html"><i class="fa fa-arrow-circle-left"></i> Previous Page</a></div>
-    <div class="page"><a class="next" href="/stories/space/5.html">Go to space <i class="fa fa-arrow-circle-up"></i></a></div>
-    <div class="page"><a class="next" href="/stories/earth/4.html">Next Page <i class="fa fa-arrow-circle-right"></i></a></div>
+    <div class="page"><a class="previous" href="6.html"><i class="fa fa-arrow-circle-up"></i> Back to Space</a></div>
+    <div class="page"><a class="previous" href="4.html"><i class="fa fa-arrow-circle-down"></i> Back to Earth</a></div>
+    <div class="page"><a class="next" href="8.html">Next Page <i class="fa fa-arrow-circle-right"></i></a></div>
 </section>
 
 <!-- Footer -->
@@ -360,10 +483,10 @@
     </div>
 </footer>
 
-<script src="/js/jquery.js"></script>
-<script src="/js/bootstrap.min.js"></script>
-<script src="/js/jquery.easing.min.js"></script>
-<script src="/js/grayscale.js"></script>
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.easing.min.js"></script>
+<script src="js/grayscale.js"></script>
 
 </body>
 

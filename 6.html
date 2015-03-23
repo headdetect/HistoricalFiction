@@ -11,10 +11,10 @@
 
     <title>It's Not Ours - Historical Fiction</title>
 
-    <link href="/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/css/grayscale.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/grayscale.css" rel="stylesheet">
 
-    <link href="/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet"
           type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
@@ -44,31 +44,31 @@
         <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
             <ul class="nav navbar-nav">
                 <li class="hidden"><a href="#page-top"></a></li>
-                <li><a href="/">Introduction</a></li>
+                <li><a href="index.html">Introduction</a></li>
                 <li class="dropdown">
                     <a href="#" class="page-scroll dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Earth & Space <span class="caret"></span></a>
                     <ul class="dropdown-menu" role="menu">
-                        <li><a href="/stories/earthspace/1.html">To the Moon</a></li>
-                        <li><a href="/stories/earthspace/2.html">Discovery</a></li>
-                        <li><a href="/stories/earthspace/7.html">The Rescue</a></li>
-                        <li><a href="/stories/earthspace/8.html">For the People</a></li>
+                        <li><a href="1.html">To the Moon</a></li>
+                        <li><a href="2.html">Discovery</a></li>
+                        <li><a href="7.html">The Rescue</a></li>
+                        <li><a href="8.html">For the People</a></li>
                     </ul>
                 </li>
                 <li class="dropdown">
                     <a href="#" class="page-scroll dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Earth <span class="caret"></span></a>
                     <ul class="dropdown-menu" role="menu">
-                        <li><a href="/stories/earth/3.html">Eleven?</a></li>
-                        <li><a href="/stories/earth/4.html">War Room</a></li>
+                        <li><a href="3.html">Eleven?</a></li>
+                        <li><a href="4.html">War Room</a></li>
                     </ul>
                 </li>
                 <li class="dropdown">
                     <a href="#" class="page-scroll dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Space <span class="caret"></span></a>
                     <ul class="dropdown-menu" role="menu">
-                        <li><a href="/stories/space/5.html">SOS</a></li>
-                        <li><a href="/stories/space/6.html">History Lesson</a></li>
+                        <li><a href="5.html">SOS</a></li>
+                        <li><a href="6.html">History Lesson</a></li>
                     </ul>
                 </li>
-                <li><a href="/stories/earthspace/credits.html">Credits</a></li>
+                <li><a href="credits.html">Credits</a></li>
             </ul>
         </div>
     </div>
@@ -76,16 +76,12 @@
 
 <!-- Intro Header -->
 <header class="intro">
-    <!--- Source video https://www.youtube.com/watch?v=b6TYTG81NtY --->
+    <img src="/img/pyramids.jpg" />
     <div class="intro-body">
-        <div class="video-controls">
-            <button class="mute"><i class="fa fa-volume-up"></i></button>
-            <a class="link" href="http://files.mrlopez.me/raw/return.mp4"><i class="fa fa-chain"></i></a>
-        </div>
         <div class="container">
             <div class="row">
                 <div class="col-md-8 col-md-offset-2">
-                    <h1 class="brand-heading">Rescue</h1>
+                    <h1 class="brand-heading">History Lesson</h1>
                     <a href="#content" class="btn btn-circle page-scroll">
                         <i class="fa fa-angle-double-down animated"></i>
                     </a>
@@ -93,12 +89,6 @@
             </div>
         </div>
     </div>
-    <div class="overlay"></div>
-    <video autoplay loop id="video">
-        <!-- source video here: https://www.youtube.com/watch?v=lRwKUScppvQ -->
-        <source type="video/mp4" src="http://files.mrlopez.me/raw/return.mp4" />
-        You need to upgrade your browser
-    </video>
 </header>
 
 <!-- About Section -->
@@ -108,18 +98,76 @@
             <li>CMD <small>Neil Armstrong (Commander)</small></li>
             <li>PIL <small>Michael Collins (Command Module Pilot)</small></li>
             <li>LMP <small>Edwin "Buzz" E. Aldrin, Jr. (Lunar Module Pilot)</small></li>
-            <li>HGC <small>​McCandless aka CAPCOM (Houston Ground Control)</small></li>
-            <li>DCTR <small>Eugene Francis "Gene" Kranz (Director of NASA)</small></li>
         </ul>
         <ul class="timeline">
-            <li class="timeline-inverted">
+            <li>
                 <div class="timeline-panel">
                     <div class="timeline-heading">
-                        <h4 class="timeline-title">HGC</h4>
+                        <h4 class="timeline-title">CMD</h4>
                     </div>
                     <div class="timeline-body">
                         <p>
-                            <em>*bzzzz*</em> Eleven, do you read us over? <em>*bzzzz*</em>
+                            Check over there. Maybe he’s under that.
+                        </p>
+                    </div>
+                </div>
+            </li>
+            <li class="timeline-inverted">
+                <div class="timeline-panel">
+                    <div class="timeline-heading">
+                        <h4 class="timeline-title">PIL</h4>
+                    </div>
+                    <div class="timeline-body">
+                        <p>
+                            Roger
+                        </p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="timeline-panel">
+                    <div class="timeline-heading">
+                        <h4 class="timeline-title">LMP</h4>
+                    </div>
+                    <div class="timeline-body">
+                        <p>
+                            *Cough* *Cough* Ugh. Help.
+                        </p>
+                    </div>
+                </div>
+            </li>
+            <li class="timeline-inverted">
+                <div class="timeline-panel">
+                    <div class="timeline-heading">
+                        <h4 class="timeline-title">CMD</h4>
+                    </div>
+                    <div class="timeline-body">
+                        <p>
+                            You hear that?
+                        </p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="timeline-panel">
+                    <div class="timeline-heading">
+                        <h4 class="timeline-title">LMP</h4>
+                    </div>
+                    <div class="timeline-body">
+                        <p>
+                            Heeeelllpp. Ugh. My back.
+                        </p>
+                    </div>
+                </div>
+            </li>
+            <li class="timeline-inverted">
+                <div class="timeline-panel">
+                    <div class="timeline-heading">
+                        <h4 class="timeline-title">CMD</h4>
+                    </div>
+                    <div class="timeline-body">
+                        <p>
+                            Holy shit you’re alive!
                         </p>
                     </div>
                 </div>
@@ -131,7 +179,7 @@
                     </div>
                     <div class="timeline-body">
                         <p>
-                            You hear that?
+                            We thought we lost you.
                         </p>
                     </div>
                 </div>
@@ -139,11 +187,35 @@
             <li class="timeline-inverted">
                 <div class="timeline-panel">
                     <div class="timeline-heading">
-                        <h4 class="timeline-title">HGC</h4>
+                        <h4 class="timeline-title">LMP</h4>
                     </div>
                     <div class="timeline-body">
                         <p>
-                            <em>*bzzzz*</em> Eleven, do you read us over? <em>*bzzzz*</em>
+                            What the hell is going on?
+                        </p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="timeline-panel">
+                    <div class="timeline-heading">
+                        <h4 class="timeline-title">PIL</h4>
+                    </div>
+                    <div class="timeline-body">
+                        <p>
+                            We have no idea.
+                        </p>
+                    </div>
+                </div>
+            </li>
+            <li class="timeline-inverted">
+                <div class="timeline-panel">
+                    <div class="timeline-heading">
+                        <h4 class="timeline-title">LMP</h4>
+                    </div>
+                    <div class="timeline-body">
+                        <p>
+                            I feel like I just got drop kicked in the stomach. I would like some explanation.
                         </p>
                     </div>
                 </div>
@@ -155,7 +227,7 @@
                     </div>
                     <div class="timeline-body">
                         <p>
-                            Houston? This is Armstrong. Do you copy?
+                            Well. You already know of when we were out exploring and lost communications to Houston after we were getting those quakes.
                         </p>
                     </div>
                 </div>
@@ -163,11 +235,11 @@
             <li class="timeline-inverted">
                 <div class="timeline-panel">
                     <div class="timeline-heading">
-                        <h4 class="timeline-title">HGC</h4>
+                        <h4 class="timeline-title">LMP</h4>
                     </div>
                     <div class="timeline-body">
                         <p>
-                            <em>*bzzzz*</em>
+                            I remember, keep going.
                         </p>
                     </div>
                 </div>
@@ -179,7 +251,7 @@
                     </div>
                     <div class="timeline-body">
                         <p>
-                            Houston. Do you copy?
+                            We keep going and the quakes get larger and larger. Out of the blue the Lunor just comes crashing down.
                         </p>
                     </div>
                 </div>
@@ -187,11 +259,23 @@
             <li class="timeline-inverted">
                 <div class="timeline-panel">
                     <div class="timeline-heading">
-                        <h4 class="timeline-title">HGC</h4>
+                        <h4 class="timeline-title">LMP</h4>
                     </div>
                     <div class="timeline-body">
                         <p>
-                            <em>*bzzzz*</em> Copy
+                            How? It wasn't even in the gravitational field.
+                        </p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="timeline-panel">
+                    <div class="timeline-heading">
+                        <h4 class="timeline-title">CMD</h4>
+                    </div>
+                    <div class="timeline-body">
+                        <p>
+                            That's the thing, we have no idea.
                         </p>
                     </div>
                 </div>
@@ -199,11 +283,35 @@
             <li class="timeline-inverted">
                 <div class="timeline-panel">
                     <div class="timeline-heading">
-                        <h4 class="timeline-title">HGC</h4>
+                        <h4 class="timeline-title">LMP</h4>
                     </div>
                     <div class="timeline-body">
                         <p>
-                            I think we’ve got the signal restored. Somewhat. We need your coords, we only have voice signals online.
+                            Well. What do we do now?
+                        </p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="timeline-panel">
+                    <div class="timeline-heading">
+                        <h4 class="timeline-title">CMD</h4>
+                    </div>
+                    <div class="timeline-body">
+                        <p>
+                            We only have about 114 hours left in our suits. I guess the only thing we can do is wait it out.
+                        </p>
+                    </div>
+                </div>
+            </li>
+            <li class="timeline-inverted">
+                <div class="timeline-panel">
+                    <div class="timeline-heading">
+                        <h4 class="timeline-title">PIL</h4>
+                    </div>
+                    <div class="timeline-body">
+                        <p>
+                            ey, uh, guys. You mind coming over here?
                         </p>
                     </div>
                 </div>
@@ -215,7 +323,7 @@
                     </div>
                     <div class="timeline-body">
                         <p>
-                            1.4 N and about 24 E. Couple of degrees off where we landed. Over.
+                            Roger. What’d you discover?
                         </p>
                     </div>
                 </div>
@@ -223,11 +331,11 @@
             <li class="timeline-inverted">
                 <div class="timeline-panel">
                     <div class="timeline-heading">
-                        <h4 class="timeline-title">HGC</h4>
+                        <h4 class="timeline-title">CMD</h4>
                     </div>
                     <div class="timeline-body">
                         <p>
-                            Roger
+                            Are those pyramids?
                         </p>
                     </div>
                 </div>
@@ -235,13 +343,35 @@
             <li class="timeline-inverted">
                 <div class="timeline-panel">
                     <div class="timeline-heading">
-                        <h4 class="timeline-title">HGC</h4>
+                        <h4 class="timeline-title">CMD</h4>
                     </div>
                     <div class="timeline-body">
                         <p>
-                            We’ve sent the AP1-X Prototype your way. We installed an extra satellite module so
-                            hopefully we stay in communication this time.
-                            It's operating on channel 50.
+                            They look like the pyramids in Egypt.
+                        </p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="timeline-panel">
+                    <div class="timeline-heading">
+                        <h4 class="timeline-title">PIL</h4>
+                    </div>
+                    <div class="timeline-body">
+                        <p>
+                            What are these? Little dirt models?
+                        </p>
+                    </div>
+                </div>
+            </li>
+            <li class="timeline-inverted">
+                <div class="timeline-panel">
+                    <div class="timeline-heading">
+                        <h4 class="timeline-title">LMP</h4>
+                    </div>
+                    <div class="timeline-body">
+                        <p>
+                            This one looks like stonehenge.
                         </p>
                     </div>
                 </div>
@@ -253,7 +383,7 @@
                     </div>
                     <div class="timeline-body">
                         <p>
-                            Houston, You are going to want the AP1 crew to look at this when they land.
+                            Somebody come take a photograph of these. We need to document this.
                         </p>
                     </div>
                 </div>
@@ -261,23 +391,11 @@
             <li class="timeline-inverted">
                 <div class="timeline-panel">
                     <div class="timeline-heading">
-                        <h4 class="timeline-title">HGC</h4>
+                        <h4 class="timeline-title">PIL</h4>
                     </div>
                     <div class="timeline-body">
                         <p>
-                            Negative. Our mission is to get you home safely. We don’t have time for new discoveries.
-                        </p>
-                    </div>
-                </div>
-            </li>
-            <li class="timeline-inverted">
-                <div class="timeline-panel">
-                    <div class="timeline-heading">
-                        <h4 class="timeline-title">HGC</h4>
-                    </div>
-                    <div class="timeline-body">
-                        <p>
-                            We are going to need you to give us exact coords.
+                            I'm on it.
                         </p>
                     </div>
                 </div>
@@ -289,130 +407,7 @@
                     </div>
                     <div class="timeline-body">
                         <p>
-                            1.478 N 23.9892 E. Over.
-                        </p>
-                    </div>
-                </div>
-            </li>
-            <li class="timeline-inverted">
-                <div class="timeline-panel">
-                    <div class="timeline-heading">
-                        <h4 class="timeline-title">HGC</h4>
-                    </div>
-                    <div class="timeline-body">
-                        <p>
-                            Roger.
-                        </p>
-                    </div>
-                </div>
-            </li>
-            <li class="timeline-inverted">
-                <div class="timeline-panel">
-                    <div class="timeline-heading">
-                        <h4 class="timeline-title">HGC</h4>
-                    </div>
-                    <div class="timeline-body">
-                        <p>
-                            Sit tight everyone. We are going to get you home.
-                        </p>
-                    </div>
-                </div>
-            </li>
-            <li>
-                <div class="timeline-panel">
-                    <div class="timeline-heading">
-                        <h4 class="timeline-title">CMD</h4>
-                    </div>
-                    <div class="timeline-body">
-                        <p>
-                            Houston, can we get communications with the crew onboard the AP1?
-                        </p>
-                    </div>
-                </div>
-            </li>
-            <li class="timeline-inverted">
-                <div class="timeline-panel">
-                    <div class="timeline-heading">
-                        <h4 class="timeline-title">HGC</h4>
-                    </div>
-                    <div class="timeline-body">
-                        <p>
-                            Uhh... Negative. We were unable to proxy their communications through the main communication module
-                            in the short amount of time we had. We can relay your message on to them though.
-                        </p>
-                    </div>
-                </div>
-            </li>
-            <li>
-                <div class="timeline-panel">
-                    <div class="timeline-heading">
-                        <h4 class="timeline-title">CMD</h4>
-                    </div>
-                    <div class="timeline-body">
-                        <p>
-                            Ask them if they have any extra cargo space.
-                        </p>
-                    </div>
-                </div>
-            </li>
-            <li class="timeline-inverted">
-                <div class="timeline-panel">
-                    <div class="timeline-heading">
-                        <h4 class="timeline-title">HGC</h4>
-                    </div>
-                    <div class="timeline-body">
-                        <p>
-                            Roger.
-                        </p>
-                    </div>
-                </div>
-            </li>
-            <li class="timeline-inverted">
-                <div class="timeline-panel">
-                    <div class="timeline-heading">
-                        <h4 class="timeline-title">HGC</h4>
-                    </div>
-                    <div class="timeline-body">
-                        <p>
-                            I'm getting a negative. The ship can only hold 5 members onboard. You’re already at 6.
-                            This is a spy spacecraft, not a scientific one.
-                        </p>
-                    </div>
-                </div>
-            </li>
-            <li>
-                <div class="timeline-panel">
-                    <div class="timeline-heading">
-                        <h4 class="timeline-title">CMD</h4>
-                    </div>
-                    <div class="timeline-body">
-                        <p>
-                            There's no room? We need to bring back this <em>thing</em> for examination.
-                        </p>
-                    </div>
-                </div>
-            </li>
-            <li class="timeline-inverted">
-                <div class="timeline-panel">
-                    <div class="timeline-heading">
-                        <h4 class="timeline-title">HGC</h4>
-                    </div>
-                    <div class="timeline-body">
-                        <p>
-                            Negative. Unless you can hold it in your hands.
-                        </p>
-                    </div>
-                </div>
-            </li>
-            <li>
-                <div class="timeline-panel">
-                    <div class="timeline-heading">
-                        <h4 class="timeline-title">DCTR</h4>
-                    </div>
-                    <div class="timeline-body">
-                        <p>
-                            Crew members of Apollo 11, you are to board that ship and come back to earth. You are <b>not</b> to bring back any discoveries. Do you
-                            understand?
+                            This is very interesting. It's possible that the moon is mirroring the earths air field with respect to gravity.
                         </p>
                     </div>
                 </div>
@@ -424,7 +419,7 @@
                     </div>
                     <div class="timeline-body">
                         <p>
-                            Roger.
+                            Huh?
                         </p>
                     </div>
                 </div>
@@ -432,24 +427,15 @@
             <li>
                 <div class="timeline-panel">
                     <div class="timeline-heading">
-                        <h4 class="timeline-title">DCTR</h4>
+                        <h4 class="timeline-title">LMP</h4>
                     </div>
                     <div class="timeline-body">
                         <p>
-                            We have no idea what your "discoveries" are capable of.
-                            We are going the safe route and banning all collections of any non earthly artifacts.
-                        </p>
-                    </div>
-                </div>
-            </li>
-            <li>
-                <div class="timeline-panel">
-                    <div class="timeline-heading">
-                        <h4 class="timeline-title">HGC</h4>
-                    </div>
-                    <div class="timeline-body">
-                        <p>
-                            The AP1 crew has reported that the ETA to your location is 2 hours.
+                            It could be that the buildings crafted on earth shifted the gravitational field the
+                            earth has on the moon. These modern wonders could have “blocked” or altered the field.
+                            Sort of like how an object casts a shadow in the presence of the sun.
+                            The ground up here is very soft and mold-able. Its possible that we’ve created some sort
+                            of 3D gravitational shadow.
                         </p>
                     </div>
                 </div>
@@ -461,7 +447,119 @@
                     </div>
                     <div class="timeline-body">
                         <p>
-                            Roger
+                            That could explain the shapes, but what about the locations.
+                            These are very close together. These things are basically to scale,
+                            except for the distance between them.
+                        </p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="timeline-panel">
+                    <div class="timeline-heading">
+                        <h4 class="timeline-title">LMP</h4>
+                    </div>
+                    <div class="timeline-body">
+                        <p>
+                            It could be the fact that the Earth spins faster than the moon moves,
+                            creating a smaller depth of field for the gravity to affect.
+                        </p>
+                    </div>
+                </div>
+            </li>
+            <li class="timeline-inverted">
+                <div class="timeline-panel">
+                    <div class="timeline-heading">
+                        <h4 class="timeline-title">PIL</h4>
+                    </div>
+                    <div class="timeline-body">
+                        <p>
+                            Some of these don’t even look like anything i’ve seen on Earth though.
+                            Like this one. It looks like a giant building. IT EVEN HAS NUMBERS AND LETTERS.
+                        </p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="timeline-panel">
+                    <div class="timeline-heading">
+                        <h4 class="timeline-title">CMD</h4>
+                    </div>
+                    <div class="timeline-body">
+                        <p>
+                            Let me see. “25°11′50.0″N 55°16′26.6″E”
+                        </p>
+                    </div>
+                </div>
+            </li>
+            <li class="timeline-inverted">
+                <div class="timeline-panel">
+                    <div class="timeline-heading">
+                        <h4 class="timeline-title">LMP</h4>
+                    </div>
+                    <div class="timeline-body">
+                        <p>
+                            Thank god the Air Force makes us memorize coordinates regions, those are coordinates for somewhere in the persian area.
+                        </p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="timeline-panel">
+                    <div class="timeline-heading">
+                        <h4 class="timeline-title">CMD</h4>
+                    </div>
+                    <div class="timeline-body">
+                        <p>
+                            Tell me the damn soviets didn’t beat us here.
+                        </p>
+                    </div>
+                </div>
+            </li>
+            <li class="timeline-inverted">
+                <div class="timeline-panel">
+                    <div class="timeline-heading">
+                        <h4 class="timeline-title">LMP</h4>
+                    </div>
+                    <div class="timeline-body">
+                        <p>
+                            Impossible. Why would they land here and not announce it? It has to be something else.
+                        </p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="timeline-panel">
+                    <div class="timeline-heading">
+                        <h4 class="timeline-title">PIL</h4>
+                    </div>
+                    <div class="timeline-body">
+                        <p>
+                            Guys! Oh, Lordy.... This is amazing! Get over here!
+                        </p>
+                    </div>
+                </div>
+            </li>
+            <li class="timeline-inverted">
+                <div class="timeline-panel">
+                    <div class="timeline-heading">
+                        <h4 class="timeline-title">CMD</h4>
+                    </div>
+                    <div class="timeline-body">
+                        <p>
+                            Is that what I think it is?
+                        </p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="timeline-panel">
+                    <div class="timeline-heading">
+                        <h4 class="timeline-title">PIL</h4>
+                    </div>
+                    <div class="timeline-body">
+                        <p>
+                            This is possibly the greatest discovery in the history of man.
                         </p>
                     </div>
                 </div>
@@ -471,9 +569,12 @@
 </section>
 
 <section class="pages">
-    <div class="page"><a class="previous" href="/stories/space/6.html"><i class="fa fa-arrow-circle-up"></i> Back to Space</a></div>
-    <div class="page"><a class="previous" href="/stories/earth/4.html"><i class="fa fa-arrow-circle-down"></i> Back to Earth</a></div>
-    <div class="page"><a class="next" href="/stories/earthspace/8.html">Next Page <i class="fa fa-arrow-circle-right"></i></a></div>
+    <div class="page"><a class="previous" href="2.html"><i class="fa fa-arrow-circle-left"></i> Previous Page</a></div>
+    <div class="page"><a class="next" href="3.html">Go to Earth <i class="fa fa-arrow-circle-down"></i></a></div>
+    <div class="page">
+        <a class="next" href="7.html">Continue Story <i class="fa fa-arrow-circle-right"></i></a>
+        <small>Read earth story first</small>
+    </div>
 </section>
 
 <!-- Footer -->
@@ -483,10 +584,10 @@
     </div>
 </footer>
 
-<script src="/js/jquery.js"></script>
-<script src="/js/bootstrap.min.js"></script>
-<script src="/js/jquery.easing.min.js"></script>
-<script src="/js/grayscale.js"></script>
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.easing.min.js"></script>
+<script src="js/grayscale.js"></script>
 
 </body>
 
