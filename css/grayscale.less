@@ -15,6 +15,36 @@ body {
   background-color: #000;
 }
 
+#need-desktop {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  clear: both;
+  z-index: 9999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  background: black;
+
+  .alert {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 18px;
+    text-align: center;
+    font-size: 120%;
+
+    &.alert-danger {
+      background: black;
+      border: 1px solid #B71C1C;
+      color: #B71C1C;
+    }
+  }
+}
+
+
+
 html {
   width: 100%;
   height: 100%;
@@ -162,21 +192,6 @@ pre {
   overflow: hidden;
   position: relative;
 
-  .overlay {
-    background-image: url('/img/pattern.png');
-    position: absolute;
-    opacity: 0.2;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 3;
-
-    &.overlay-strong {
-      opacity: .5;
-    }
-  }
-
   video, canvas {
     position: absolute;
     top: 0;
@@ -226,6 +241,25 @@ pre {
         display: inline;
       }
     }
+  }
+}
+
+.overlay {
+  background-image: url('../img/pattern.png');
+  position: absolute;
+  opacity: 0.2;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+
+  &.overlay-strong {
+    opacity: .5;
+  }
+
+  &.overlay-strongest {
+    opacity: .8;
   }
 }
 

@@ -19,12 +19,24 @@ $(window).scroll(function() {
 $(function() {
     $('a.page-scroll').bind('click', function(event) {
         var $anchor = $(this);
-        $('html, body').stop().animate({
-            scrollTop: $($anchor.attr('href')).offset().top
-        }, 1500, 'easeInOutExpo');
+        var anchor = $($anchor.attr('href'));
+        if (anchor && anchor.length)
+            $('html, body').stop().animate({
+                scrollTop: $($anchor.attr('href')).offset().top
+            }, 1500, 'easeInOutExpo');
         event.preventDefault();
     });
 });
+
+var isMobile = window.matchMedia("only screen and (max-width: 760px)");
+if (isMobile.matches) {
+    var vidia = $("video");
+    if (vidia && vidia.length >= 1) {
+        vidia = vidia[0];
+        vidia.muted = true;
+        vidia.pause();
+    }
+}
 
 // Closes the Responsive Menu on Menu Item Click
 $('.navbar-collapse ul li a').click(function() {
