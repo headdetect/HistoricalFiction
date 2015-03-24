@@ -6,17 +6,17 @@
     Modified by Brayden Lopez (http://mrlopez.me)
     For educational use only.
  */
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800);
 
 body {
   width: 100%;
   height: 100%;
-  font-family: Lora, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Open Sans', sans-serif;
   color: #999999;
   background-color: #000;
 }
 
 #need-desktop {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   clear: both;
   z-index: 9999;
   position: fixed;
@@ -182,6 +182,10 @@ pre {
   }
 }
 
+.story {
+  padding-left: 1px;
+}
+
 .intro {
   display: table;
   width: 100%;
@@ -189,7 +193,8 @@ pre {
   padding: 100px 0;
   text-align: center;
   color: white;
-  overflow: hidden;
+  overflow-x :hidden;
+  overflow-y: hidden;
   position: relative;
 
   video, canvas {
@@ -604,21 +609,26 @@ body {
   font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 3em;
   font-weight: 100;
-  display: table;
+
+  margin-bottom: 30px;
+
+  &.row {
+    margin: auto 0;
+  }
 
   .page {
-    display: table-cell;
-    width: auto;
     height: 100%;
     text-align: center;
     color: #999999;
-    vertical-align: middle;
-    margin: auto 0;
+    position: relative;
 
     a {
       color: #999999;
       display: block;
       width: 100%;
+      &.normal {
+        line-height: 100px;
+      }
     }
 
 
@@ -662,4 +672,13 @@ ul.characters {
 
 .too-lazy-to-href {
   font-size: 80%;
+}
+
+.flickr {
+  color: transparent;
+  text-shadow: white 0 0 1px;
+
+  -webkit-transition: text-shadow 0.2s ease-in-out;
+  -moz-transition:    text-shadow 0.2s ease-in-out;
+  transition:         text-shadow 0.2s ease-in-out;
 }
